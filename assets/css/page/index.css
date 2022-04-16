@@ -1,0 +1,61 @@
+.scroll-down {
+    width: 100%;
+    margin-bottom: 0;
+    position: absolute;
+    top: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.after-border:after {
+  border-top: 2.3px solid #0066FF;
+  content: "";
+  width: 1.4em;
+}
+.after-border:before {
+  margin-right: 1rem;
+}
+.after-border:after {
+  margin-left: 1rem;
+}
+.about-us span {
+	margin-left: 1rem;
+	font-size: 1.2em;
+	font-family: "Noto Sans JP";
+	font-weight: bold;
+}
+.br-new{
+	display: none;
+}
+@media screen and (max-width: 900px) {
+    .responsivebr {
+        display: none;
+    }
+    .topright {
+        display: none;
+    }
+    .welcome {
+        position: relative;
+    }
+    .welcome > .content {
+        width: 80%;
+    }
+    .welcome > .content > hr.title-bar {
+        width: 40%;
+    }
+    .scroll-down {
+        position: relative;
+        top: 30px;
+    }
+    .after-border {
+        display: block;
+    }
+    .after-border:after, .after-border:before {
+        display: none;
+    }
+    .about-us {
+        margin-top: 50px;
+        display: block;
+        text-align: center;
+    }
+}

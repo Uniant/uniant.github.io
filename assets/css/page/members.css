@@ -1,0 +1,102 @@
+.topright {
+    width: 100%;
+}
+.toprightline {
+    width: 100%;
+    margin-top: 15vw;
+}
+.toprightimg {
+    position: absolute;
+    transform: rotate(45deg);
+    top: -5vw;
+    right: 10%;
+}
+.toprightimg > svg {
+    width: 25vw;
+    height: auto;
+}
+.members {
+    margin: 30px 10%;
+}
+.membersline {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.member {
+    width: 42%;
+    background: #f3f3f3;
+    padding: 40px;
+    border-radius: 10px;
+}
+.member > .names > span.name {
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 3em;
+    margin-right: 10px;
+}
+span.mail {
+    font-size: 15px;
+     color: #0f0f0f;
+}
+span.maillast {
+    font-size: 12px;
+}
+.github > img, .twitter > img {
+    width: 25px;
+    margin-left: 10px;
+}
+.socialicons {
+    float: right;
+}
+hr.undername {
+    border: 0;
+    background: linear-gradient(35deg, #0066ff, #00398f);
+    height: 2px;
+    width: 20%;
+}
+.position {
+    margin: 25px 0;
+}
+.chairman, .executive, .nopositions {
+    padding: 5px 15px;
+    color: #ffffff;
+    font-size: 15px;
+    margin: 10px 5px 0 0;
+    border-radius: 5px;
+}
+.chairman {
+    background: #00398f;
+}
+.executive {
+    background: #0066ff;
+}
+.nopositions {
+   background: #e5e5e5;
+}
+span.projectstitle {
+    font-weight: bold;
+}
+.memberprojects {
+    margin: 10px 0;
+}
+.memberprojects > span {
+    color: #0066ff;
+    border-radius: 5px;
+    font-size: 15px;
+}
+span.blog {
+    padding: 5px 25px;
+    background: #e5e5e5;
+}
+span.skills {
+    padding: 5px 25px;
+    background: #e5e5e5;
+}
+hr.undermember {
+    background: linear-gradient(30deg, #0066ff, #00398f);
+    border: 0;
+    height: 2px;
+    width: 100%;
+}

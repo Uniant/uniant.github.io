@@ -1,0 +1,19 @@
+.topright {
+    width: 100%;
+}
+.toprightline {
+    width: 100%;
+    margin-top: 15vw;
+}
+.toprightimg {
+    position: absolute;
+    top: 5vw;
+    right: 10%;
+}
+.toprightimg > img {
+    width: 25vw;
+    height: auto;
+}
+.mini {
+    font-size: 12px;
+}
