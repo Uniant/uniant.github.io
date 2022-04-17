@@ -35,7 +35,7 @@ var header_write_html = (function() {/*
 </header>
 */}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1].replace(/\n|\r/g, "");
 
-header_write.innerHTML = header_write_html.replace(/https://uniant.net/g,domain)
+header_write.innerHTML = header_write_html.replace(/https:\/\/uniant.net/g,domain)
 
 
 var footer_write = document.getElementsByClassName("footer")[0]
@@ -83,4 +83,4 @@ var footer_write_html = (function() {/*
 </footer>
 */}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1].replace(/\n|\r/g, "");
 
-footer_write.innerHTML = footer_write_html.replace(/https://uniant.net/g,domain)
+footer_write.innerHTML = footer_write_html.replace(/https:\/\/uniant.net/g,domain)
