@@ -1,6 +1,8 @@
 var header_write = document.getElementsByClassName("header")[0]
 
-header_write.innerHTML = (function() {/*
+var domain = "https://uniant.github.io"
+
+var header_write_html = (function() {/*
 <header>
 	<a href="/"><img src="https://uniant.net/assets/image/uniantlogo.png" alt="" height="30px"></a>
     <div class="menunormal">
@@ -33,10 +35,12 @@ header_write.innerHTML = (function() {/*
 </header>
 */}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1].replace(/\n|\r/g, "");
 
+header_write.innerHTML = header_write_html.replace("https://uniant.net",domain)
+
 
 var footer_write = document.getElementsByClassName("footer")[0]
 
-footer_write.innerHTML = (function() {/*
+var footer_write_html = (function() {/*
 <img src="https://uniant.net/assets/image/footer.svg" alt="">
 <footer>
 	<div class="footercontents">
@@ -78,3 +82,5 @@ footer_write.innerHTML = (function() {/*
 	</div>
 </footer>
 */}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1].replace(/\n|\r/g, "");
+
+footer_write.innerHTML = footer_write_html.replace("https://uniant.net",domain)
