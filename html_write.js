@@ -26,8 +26,8 @@ var header_write_html = (function() {/*
                 <ul>
                     <li><a href="https://uniant.net/about/">About</a></li>
                     <li><a href="https://uniant.net/news/">News</a></li>
-                    <li><a href="https://blog.uniant.net/">Blog</a></li>
-                    <li><a href="https://support.uniant.net/">Contact</a></li>
+                    <li><a href="https://blog.uniant.net">Blog</a></li>
+                    <li><a href="https://support.uniant.net">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,10 +35,9 @@ var header_write_html = (function() {/*
 </header>
 */}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1].replace(/\n|\r/g, "");
 
-header_write.innerHTML = header_write_html.replace(/https:\/\/blog.uniant.net\//g,domain + "/error/404.html")
-header_write.innerHTML = header_write_html.replace(/https:\/\/support.uniant.net\//g,domain + "/error/404.html")
-header_write.innerHTML = header_write_html.replace(/https:\/\/uniant.net/g,domain)
-
+header_write.innerHTML = header_write_html.replace(/https:\/\/blog.uniant.net/g,domain + "/error/404.html")
+header_write.innerHTML = header_write.innerHTML.replace(/https:\/\/support.uniant.net/g,domain + "/error/404.html")
+header_write.innerHTML = header_write.innerHTML.replace(/https:\/\/uniant.net/g,domain)
 
 var footer_write = document.getElementsByClassName("footer")[0]
 
