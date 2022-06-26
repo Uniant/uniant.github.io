@@ -36,7 +36,7 @@ var header_write_html = (function() {/*
 */}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1].replace(/\n|\r/g, "");
 
 header_write_html = header_write_html.replace(/https:\/\/blog.uniant.net/g,domain + "/error/404.html")
-header_write_html = header_write_html.replace(/https:\/\/blog.uniant.net/g,domain + "/error/404.html")
+header_write_html = header_write_html.replace(/https:\/\/support.uniant.net/g,domain + "/error/404.html")
 header_write_html = header_write_html.replace(/https:\/\/uniant.net/g,domain)
 
 header_write.innerHTML = header_write_html
