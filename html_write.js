@@ -35,11 +35,11 @@ var header_write_html = (function() {/*
 </header>
 */}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1].replace(/\n|\r/g, "");
 
-var header_html_tmp = header_write_html.replace(/https:\/\/blog.uniant.net/g,domain + "/error/404.html")
-header_html_tmp = header_html_tmp.replace(/https:\/\/blog.uniant.net/g,domain + "/error/404.html")
-header_html_tmp = header_html_tmp.innerHTML.replace(/https:\/\/uniant.net/g,domain)
+header_write_html = header_write_html.replace(/https:\/\/blog.uniant.net/g,domain + "/error/404.html")
+header_write_html = header_html_tmp.replace(/https:\/\/support.uniant.net/g,domain + "/error/404.html")
+header_write_html = header_html_tmp.replace(/https:\/\/uniant.net/g,domain)
 
-header_write.innerHTML = header_html_tmp
+header_write.innerHTML = header_write_html
 
 var footer_write = document.getElementsByClassName("footer")[0]
 
