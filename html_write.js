@@ -44,7 +44,7 @@ header_write.innerHTML = header_write_html
 var footer_write = document.getElementsByClassName("footer")[0]
 
 var footer_write_html = (function() {/*
-<img src="https://uniant.net/assets/image/footer.svg" alt="">
+<img src="https://uniant.github.io/assets/image/footer.svg" alt="">
 <footer>
 	<div class="footercontents">
 		<div class="leftcontent">
@@ -54,7 +54,7 @@ var footer_write_html = (function() {/*
 			<div class="sites">
 				<div class="sitesfooterline">
 					<span>Web:</span>
-					<a href="https://uniant.net" target="_blank" rel="noopener noreferrer"><span>https://uniant.net/</span></a>
+					<a href="https://uniant.github.io" target="_blank" rel="noopener noreferrer"><span>https://uniant.github.io/</span></a>
 				</div>
 				<div class="sitesfooterline">
 					<span>Twitter:</span>
@@ -76,9 +76,9 @@ var footer_write_html = (function() {/*
 		<div class="centermenu">
 			<span>About</span>
 			<div class="menucontent">
-				<a href="https://uniant.net/about/"><p>About Uniant</p></a>
-				<a href="https://uniant.net/projects/"><p>Projects</p></a>
-				<a href="https://uniant.net/join/"><p>Join</p></a>
+				<a href="https://uniant.github.io/about/"><p>About Uniant</p></a>
+				<a href="https://uniant.github.io/projects/"><p>Projects</p></a>
+				<a href="https://uniant.github.io/join/"><p>Join</p></a>
 				<a href="https://support.uniant.net/"><p>Contact</p></a>
 			</div>
 		</div>
